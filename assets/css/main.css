@@ -63,7 +63,9 @@ h6 {
 /* Main */
 .sliderBg{
   background-image: url("./../img/sliderbg.svg");
-  height: 400px;
   background-position: right;
   background-repeat: no-repeat;
+}
+.owl-stage-outer, .owl-stage, .owl-item{
+  height: 100%;
 }

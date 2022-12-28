@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-</head>
 
 <body style="height: 2000px;">
     <header class="header w-full">
@@ -87,8 +86,7 @@
                 <button class="uk-offcanvas-close text-black" type="button"><i class="fa-solid fa-xmark"></i></button>
                 <form class="uk-search uk-search-default py-2 font-iransansbold float-right">
                     <span uk-search-icon></span>
-                    <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..."
-                        aria-label="Search">
+                    <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..." aria-label="Search">
                 </form>
                 <ul class="mobileMenu pt-4 float-right w-full">
                     <li><a class="font-iransansbold" href="#">صفحه نخست</a></li>
@@ -110,11 +108,33 @@
         <!-- sideNavigation -->
     </header>
     <!-- Start Main -->
-    <!-- <main class="w-full">
-        <section class="sliderBg w-full">
-
+    <main class="w-full">
+        <section class="sliderBg w-full relative">
+            <img class="absolute bottom-5 right-2/4" src="./assets/img/bubble.svg" alt="">
+            <img class="absolute left-20 top-10 w-40" src="./assets/img/dotdot.svg" alt="">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-1">
+                    <div id="indexslide" class="owl-carousel owl-theme h-[35rem]">
+                        <div class="item h-full flex flex-row items-center">
+                            <div class="grid grid-cols-3">
+                                <div class="col-span-1">
+                                    <h2 class="text-xl mb-5">مشاوره سریع و رایگان</h2>
+                                    <h3 class="text-4xl mb-5">در کنار شما با دانشجویار</h3>
+                                    <p class="text-black mb-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                        سطرآنچنان که لازم است</p>
+                                    <ul class="flex flex-row gap-3">
+                                        <li><a href="#" class="bg-secondColor p-3 rounded-xl text-white hover:text-white">اطلاعات بیشتر</a></li>
+                                        <li><a href="#" class="bg-white p-3 rounded-xl">ویدیوی معرفی خدمات</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main> -->
+    </main>
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>
