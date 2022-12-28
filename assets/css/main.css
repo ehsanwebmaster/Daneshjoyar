@@ -1,0 +1,29 @@
+a {
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+a:hover {
+  color: black;
+}
+p {
+  text-align: justify;
+  line-height: 1.8;
+}
+:root {
+  --mainColor: #ff99d76b;
+  --secoundColor: #d58bdd;
+  --thirthColor: #ff99d7;
+  --fourthColor: #ffd372;
+}
+body {
+  font-size: 0.9rem;
+  font-family: iransans;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: iransansbold;
+}
