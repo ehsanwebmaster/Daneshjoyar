@@ -49,8 +49,8 @@ h6 {
   background-color: var(--secoundColor);
 }
 .main-header {
-  background-color: #ffffff;
-  /* backdrop-filter: blur(15px); */
+  background-color: #ffffffaf;
+  backdrop-filter: blur(15px);
 }
 .mobileMenu > li {
   border-bottom: 1px solid var(--secoundColor);
@@ -59,4 +59,11 @@ h6 {
   color: black;
   padding: .5rem 0;
   display: block;
+}
+/* Main */
+.sliderBg{
+  background-image: url("./../img/sliderbg.svg");
+  height: 400px;
+  background-position: right;
+  background-repeat: no-repeat;
 }
