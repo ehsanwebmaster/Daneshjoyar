@@ -21,8 +21,100 @@
 </head>
 </head>
 
-<body>
+<body style="height: 2000px;">
+    <header class="header w-full">
+        <section class="top-header bg-secondColor w-full">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-2 gap-4 items-center">
+                    <div class="xl:col-span-1 col-span-2">
+                        <ul class="flex flex-row justify-center xl:justify-start gap-3 text-white py-2 xl:py-0">
+                            <li class="hidden sm:block">شبکه های اجتماعی</li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-instagram text-sm"></i></a></li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-whatsapp text-sm"></i></a></li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-twitter text-sm"></i></a></li>
+                            <li class="mr-3">شماره تماس: </li>
+                            <li class="-mr-1"><a class="hover:text-white" href="#">09352623538 <i
+                                        class="fa-solid fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1 hidden xl:block">
+                        <form class="uk-search uk-search-default py-2 font-iransansbold float-left">
+                            <span uk-search-icon></span>
+                            <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..."
+                                aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-header w-full py-5 bg-white"
+            uk-sticky="show-on-up: true; animation: uk-animation-slide-top; media: 640">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-6 items-center">
+                    <div class="col-span-3 xl:col-span-1">
+                        <a class="block text-2xl font-iransansbold mr-4 sm:mr-0" href="#">دانشجویار</a>
+                    </div>
+                    <div class="col-span-3 xl:hidden">
+                        <a href="#" class="float-left ml-4" uk-toggle="target: #offcanvas-push"><i
+                                class="fa-solid fa-bars text-2xl"></i></a>
+                    </div>
+                    <div class="col-span-4 hidden xl:block">
+                        <ul class="mainmenu flex flex-row">
+                            <li><a class="p-5 text-secondColor font-iransansbold" href="#">صفحه نخست</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">خدمات</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">انتخاب رشته</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">کنکور</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">فروشگاه</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">ارتباط باما</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">درباره ما</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">ورود/عضویت</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1 hidden xl:block">
+                        <a href="#"
+                            class="headerBtn float-left rounded-sm border-secondColor border-2 px-[0.5rem] py-2 pt-1 hover:bg-secondColor hover:text-white"><i
+                                class="fa-solid fa-radio text-secondColor text-xl"></i> رادیو و تلویزیون کنکور</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sideNavigation -->
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar bg-mainColor text-black">
+                <button class="uk-offcanvas-close text-black" type="button"><i class="fa-solid fa-xmark"></i></button>
+                <form class="uk-search uk-search-default py-2 font-iransansbold float-right">
+                    <span uk-search-icon></span>
+                    <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..."
+                        aria-label="Search">
+                </form>
+                <ul class="mobileMenu pt-4 float-right w-full">
+                    <li><a class="font-iransansbold" href="#">صفحه نخست</a></li>
+                    <li><a class="font-iransansbold" href="#">خدمات</a></li>
+                    <li><a class="font-iransansbold" href="#">انتخاب رشته</a></li>
+                    <li><a class="font-iransansbold" href="#">کنکور</a></li>
+                    <li><a class="font-iransansbold" href="#">فروشگاه</a></li>
+                    <li><a class="font-iransansbold" href="#">ارتباط باما</a></li>
+                    <li><a class="font-iransansbold" href="#">درباره ما</a></li>
+                    <li><a class="font-iransansbold" href="#">ورود/عضویت</a></li>
+                </ul>
+                <div class="float-right mt-4 w-full flex flex-row justify-center">
+                    <a href="#"
+                        class="headerBtn headerBtn2 float-left rounded-sm border-secondColor border-2 px-[0.5rem] py-2 pt-1 text-secondColor hover:bg-secondColor hover:text-white"><i
+                            class="fa-solid fa-radio text-white text-xl"></i> رادیو و تلویزیون کنکور</a>
+                </div>
+            </div>
+        </div>
+        <!-- sideNavigation -->
+    </header>
+    <!-- Start Main -->
+    <!-- <main class="w-full">
+        <section class="sliderBg w-full">
 
+        </section>
+    </main> -->
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>

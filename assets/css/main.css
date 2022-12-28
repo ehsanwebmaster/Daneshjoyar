@@ -1,9 +1,7 @@
-a {
+a,
+i {
   transition: all 0.3s;
   text-decoration: none !important;
-}
-a:hover {
-  color: black;
 }
 p {
   text-align: justify;
@@ -26,4 +24,46 @@ h4,
 h5,
 h6 {
   font-family: iransansbold;
+}
+/* Header */
+.uk-search-input::placeholder,
+.uk-search > span {
+  color: #d58bdd !important;
+}
+.uk-search > input {
+  background-color: white !important;
+}
+.uk-search-default .uk-search-input:focus {
+  border-color: white !important;
+}
+.uk-search-default .uk-search-input {
+  height: 2.2rem;
+}
+.mainmenu > li > a:hover {
+  color: var(--secoundColor);
+}
+.headerBtn:hover i {
+  color: white;
+}
+.headerBtn2{
+  background-color: var(--secoundColor);
+}
+.main-header {
+  background-color: #ffffffaf;
+  backdrop-filter: blur(15px);
+}
+.mobileMenu > li {
+  border-bottom: 1px solid var(--secoundColor);
+}
+.mobileMenu > li > a {
+  color: black;
+  padding: .5rem 0;
+  display: block;
+}
+/* Main */
+.sliderBg{
+  background-image: url("./../img/sliderbg.svg");
+  height: 400px;
+  background-position: right;
+  background-repeat: no-repeat;
 }

@@ -8,7 +8,7 @@ module.exports = {
         iransansbold: "iransansbold",
       },
       colors: {
-        mainColor: "#FF99D7",
+        mainColor: "#FFD4EE",
         secondColor: "#D58BDD",
         tirthColor: "#FF99D7",
         fourthColor: "#FFD372",
