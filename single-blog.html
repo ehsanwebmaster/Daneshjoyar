@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="IR-fa" dir="rtl">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وبلاگ دانشجویار</title>
+<!-- UIkit -->
+<link rel="stylesheet" href="./assets/uikit/css/uikit-rtl.min.css">
+<!-- OWLCarousel -->
+<link rel="stylesheet" href="./assets/OwlCarousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/OwlCarousel/dist/assets/owl.theme.default.min.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
+<!-- Main Style  -->
+<link rel="stylesheet" href="./assets/output/output.css">
+<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+
+<body>
+    <header class="header w-full">
+        <section class="top-header bg-secondColor w-full">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-2 gap-4 items-center">
+                    <div class="xl:col-span-1 col-span-2">
+                        <ul class="flex flex-row justify-center xl:justify-start gap-3 text-white py-2 xl:py-0">
+                            <li class="hidden sm:block">شبکه های اجتماعی</li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-instagram text-sm"></i></a></li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-whatsapp text-sm"></i></a></li>
+                            <li class="hidden sm:block"><a class="hover:text-white" href="#"><i
+                                        class="fa-brands fa-twitter text-sm"></i></a></li>
+                            <li class="mr-3">شماره تماس: </li>
+                            <li class="-mr-1"><a class="hover:text-white" href="#">09352623538 <i
+                                        class="fa-solid fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1 hidden xl:block">
+                        <form class="uk-search uk-search-default py-2 font-iransansbold float-left">
+                            <span uk-search-icon></span>
+                            <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..."
+                                aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-header w-full py-5 bg-white"
+            uk-sticky="show-on-up: true; animation: uk-animation-slide-top; media: 640">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-6 items-center">
+                    <div class="col-span-3 xl:col-span-1">
+                        <a class="block text-2xl font-iransansbold mr-4 sm:mr-0" href="#">دانشجویار</a>
+                    </div>
+                    <div class="col-span-3 xl:hidden">
+                        <a href="#" class="float-left ml-4" uk-toggle="target: #offcanvas-push"><i
+                                class="fa-solid fa-bars text-2xl"></i></a>
+                    </div>
+                    <div class="col-span-4 hidden xl:block">
+                        <ul class="mainmenu flex flex-row">
+                            <li><a class="p-5 text-secondColor font-iransansbold" href="#">صفحه نخست</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">خدمات</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">انتخاب رشته</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">کنکور</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">فروشگاه</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">ارتباط باما</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">درباره ما</a></li>
+                            <li><a class="p-5 font-iransansbold" href="#">ورود/عضویت</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1 hidden xl:block">
+                        <a href="#"
+                            class="headerBtn float-left rounded-sm border-secondColor border-2 px-[0.5rem] py-2 pt-1 hover:bg-secondColor hover:text-white"><i
+                                class="fa-solid fa-radio text-secondColor text-xl"></i> رادیو و تلویزیون کنکور</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sideNavigation -->
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar bg-mainColor text-black">
+                <button class="uk-offcanvas-close text-black" type="button"><i class="fa-solid fa-xmark"></i></button>
+                <form class="uk-search uk-search-default py-2 font-iransansbold float-right">
+                    <span uk-search-icon></span>
+                    <input class="uk-search-input rounded-xl" type="search" placeholder="جستجو ..." aria-label="Search">
+                </form>
+                <ul class="mobileMenu pt-4 float-right w-full">
+                    <li><a class="font-iransansbold" href="#">صفحه نخست</a></li>
+                    <li><a class="font-iransansbold" href="#">خدمات</a></li>
+                    <li><a class="font-iransansbold" href="#">انتخاب رشته</a></li>
+                    <li><a class="font-iransansbold" href="#">کنکور</a></li>
+                    <li><a class="font-iransansbold" href="#">فروشگاه</a></li>
+                    <li><a class="font-iransansbold" href="#">ارتباط باما</a></li>
+                    <li><a class="font-iransansbold" href="#">درباره ما</a></li>
+                    <li><a class="font-iransansbold" href="#">ورود/عضویت</a></li>
+                </ul>
+                <div class="float-right mt-4 w-full flex flex-row justify-center">
+                    <a href="#"
+                        class="headerBtn headerBtn2 float-left rounded-sm border-secondColor border-2 px-[0.5rem] py-2 pt-1 text-secondColor hover:bg-secondColor hover:text-white"><i
+                            class="fa-solid fa-radio text-white text-xl"></i> رادیو و تلویزیون کنکور</a>
+                </div>
+            </div>
+        </div>
+        <!-- sideNavigation -->
+    </header>
+    <!-- main sectin start -->
+    <main class="h-[1200rem] container mx-auto sm:px-16 px-2 mt-5">
+        <!-- Summary Blog start  -->
+        <section class="xl:grid lg:grid-cols-2  bg-[#D9D9D9] w-full h-auto rounded-xl">
+            <div class="col-span-1 px-10 py-7 order-last md:order-first ">
+                <a
+                    class="text-white bg-secondColor p-2 text-sm rounded-xl hover:bg-mainColor hover:text-black inline-block">دسته
+                    بندی
+                    نشده</a>
+                <h2 class="mt-5 font-iransansbold text-lg md:text-2xl">آموزش مطالعه با کیفیت در 10 مرحله </h2>
+                <div class="flex flex-row items-center mt-5">
+                    <div>
+                        <i class="fa-solid fa-user-large p-2 text-2xl text-tirthColor"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>نویسنده:</span>
+                        <span class="font-iransansbold text-black mt-1">رضا هاشمی</span>
+                    </div>
+                    <div class="lg:mr-10">
+                        <i class="fa-regular fa-clock p-2 text-2xl text-tirthColor"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>زمان مطالعه:</span>
+                        <span class="font-iransansbold text-black mt-1">8دقیقه</span>
+                    </div>
+                    
+                    <div class="xl:mr-10">
+                        <i class="fa-solid fa-calendar p-2 text-2xl text-tirthColor"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>انتشار:</span>
+                        <span class="font-iransansbold text-black mt-1">هشت روز پیش</span>
+                    </div>
+                </div>
+                <span class="mt-8 font-iransansbold text-md text-black inline-block">خلاصه مطلب</span>
+                <p class="mt-5">شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                    کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                    داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                    اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                    کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                    داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                    تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                    ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                    کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                    داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                    تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                    کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. </p>
+            </div>
+            <div class="col-span-1  px-10 py-12 w-full h-auto order-first  md:order-last">
+                <img class="border border-secondColor rounded-xl object-cover "
+                    src="./assets/img/single-blog/singleblog-image.png" alt="">
+            </div>
+        </section>
+        <!-- Summary Blog start  -->
+        <!--Content Blog start  -->
+        <section class="bg-[#D9D9D9] w-full h-auto rounded-xl mt-10 p-10">
+            <h3 class="mt-4 font-iransansbold text-md text-black inline-block"> آموزش مطالعه با کیفیت در 10 مرحله </h3>
+            <p class="mt-5">شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند.>شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. >شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. </p>
+            <img class="border border-secondColor rounded-xl object-cover w-full h-auto my-5"
+                src="./assets/img/single-blog/singleimge2.png" alt="">
+            <p class="mt-5">شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. </p>
+            <!-- main grid section start -->
+            <div class="xl:grid xl:grid-cols-2">
+                <div class="col-span-1">
+                    <p class="mt-5 xl:ml-6">شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                        ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند.اید مهم
+                        ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند.
+                        غلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                        ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                        داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                        تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند.اید مهم
+                        ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                        کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه
+                    </p>
+                </div>
+                <div class="col-span-1">
+                    <img class="border border-secondColor rounded-xl object-cover w-full h-auto my-5"
+                        src="./assets/img/single-blog/singleblog-image.png" alt="">
+                </div>
+            </div>
+            <!-- main grid section end -->
+            <p class="mt-5">شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                اید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. تحصیلی در اید مهم
+                ترین مشاوره در طول زندگی بعد از انتخاب رشته تحصیلی در دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. با کنکور مشخص می شود که شما قرار است چه شغلی
+                داشته باشید و در چه جایگاهی قرار بگیرید.شاید مهم ترین مشاوره در طول زندگی بعد از انتخاب رشته
+                تحصیلی در دبیرستان، مشاوره کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. دبیرستان، مشاوره
+                کنکور باشد. کنکور مسیر زندگی افراد را مشخص می کند. </p>
+        </section>
+        <!--Content Blog end  -->
+
+        <!-- other content start -->
+        <section class="mt-10">
+            <h3 class="font-iransansbold text-2xl border-b-4 border-fourthColor inline pb-3">مطالب مشابه : </h3>
+            <!-- start cards -->
+                <div class="grid grid-cols-6 gap-6 js-filter mt-8">
+                    <div class="col-span-6 md:col-span-3 xl:col-span-2 mt-3">
+                        <div class="uk-card uk-card-default bg-mainColor rounded-lg shadow-lg">
+                            <a href="">
+                                <div class="uk-card-media-top relative px-5 pt-5">
+                                    <div class="absolute h-full mask rounded-xl"></div>
+                                    <a
+                                        class="absolute z-10  m-5 text-white bg-secondColor p-2 text-sm rounded-xl hover:bg-mainColor hover:text-black">دسته
+                                        بندی
+                                        نشده</a>
+                                    <img class="object-cover w-full h-[20rem] rounded-xl"
+                                        src="assets/img/Blog/blog2.png" alt="">
+                                </div>
+                            </a>
+                            <div class="uk-card-body">
+                                <span class="mb-5">سه روز پیش</span>
+                                <a href="">
+                                    <h3 class=" mt-2 text-lg">آموزش برنامه ریزی برا مطالعه با کیفیت </h3>
+                                </a>
+                                <div class="flex flex-row items-center mt-5">
+                                    <div>
+                                        <i class="fa-solid fa-user-large p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>نویسنده:</span>
+                                        <span class="font-iransansbold text-black mt-1">رضا هاشمی</span>
+                                    </div>
+                                    <div class="mr-10">
+                                        <i class="fa-regular fa-clock p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>زمان مطالعه:</span>
+                                        <span class="font-iransansbold text-black mt-1">8دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="absolute left-5 -bottom-4">
+                                    <a
+                                        class="text-white bg-tirthColor rounded-md px-4 py-2 font-iransansbold hover:bg-secondColor hover:text-black">
+                                        ادامه مطلب</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 1 end -->
+                    <!-- card 2 start -->
+                    <div class="col-span-6 md:col-span-3 xl:col-span-2 mt-3">
+                        <div class="uk-card uk-card-default bg-mainColor rounded-lg shadow-lg">
+                            <a href="">
+                                <div class="uk-card-media-top relative px-5 pt-5">
+                                    <div class="absolute h-full mask rounded-xl"></div>
+                                    <a
+                                        class="absolute z-10  m-5 text-white bg-secondColor p-2 text-sm rounded-xl hover:bg-mainColor hover:text-black">دسته
+                                        بندی
+                                        نشده</a>
+                                    <img class="object-cover w-full h-[20rem] rounded-xl"
+                                        src="assets/img/Blog/blog2.png" alt="">
+                                </div>
+                            </a>
+                            <div class="uk-card-body">
+                                <span class="mb-5">سه روز پیش</span>
+                                <a href="">
+                                    <h3 class=" mt-2 text-lg">آموزش برنامه ریزی برا مطالعه با کیفیت </h3>
+                                </a>
+                                <div class="flex flex-row items-center mt-5">
+                                    <div>
+                                        <i class="fa-solid fa-user-large p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>نویسنده:</span>
+                                        <span class="font-iransansbold text-black mt-1">رضا هاشمی</span>
+                                    </div>
+                                    <div class="mr-10">
+                                        <i class="fa-regular fa-clock p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>زمان مطالعه:</span>
+                                        <span class="font-iransansbold text-black mt-1">8دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="absolute left-5 -bottom-4">
+                                    <a
+                                        class="text-white bg-tirthColor rounded-md px-4 py-2 font-iransansbold hover:bg-secondColor hover:text-black">
+                                        ادامه مطلب</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 end -->
+                    <!-- card 3 start -->
+                    <div class="col-span-6 md:col-span-3 xl:col-span-2 mt-3">
+                        <div class="uk-card uk-card-default bg-mainColor rounded-lg shadow-lg">
+                            <a href="">
+                                <div class="uk-card-media-top relative px-5 pt-5">
+                                    <div class="absolute h-full mask rounded-xl"></div>
+                                    <a
+                                        class="absolute z-10  m-5 text-white bg-secondColor p-2 text-sm rounded-xl hover:bg-mainColor hover:text-black">دسته
+                                        بندی
+                                        نشده</a>
+                                    <img class="object-cover w-full h-[20rem] rounded-xl"
+                                        src="assets/img/Blog/blog2.png" alt="">
+                                </div>
+                            </a>
+                            <div class="uk-card-body">
+                                <span class="mb-5">سه روز پیش</span>
+                                <a href="">
+                                    <h3 class=" mt-2 text-lg">آموزش برنامه ریزی برا مطالعه با کیفیت </h3>
+                                </a>
+                                <div class="flex flex-row items-center mt-5">
+                                    <div>
+                                        <i class="fa-solid fa-user-large p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>نویسنده:</span>
+                                        <span class="font-iransansbold text-black mt-1">رضا هاشمی</span>
+                                    </div>
+                                    <div class="mr-10">
+                                        <i class="fa-regular fa-clock p-2 text-2xl text-tirthColor"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>زمان مطالعه:</span>
+                                        <span class="font-iransansbold text-black mt-1">8دقیقه</span>
+                                    </div>
+                                </div>
+                                <div class="absolute left-5 -bottom-4">
+                                    <a
+                                        class="text-white bg-tirthColor rounded-md px-4 py-2 font-iransansbold hover:bg-secondColor hover:text-black">
+                                        ادامه مطلب</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 end -->
+                </div>
+        </section>
+        <!-- other content end  -->
+    </main>
+    <!-- main sectin end -->

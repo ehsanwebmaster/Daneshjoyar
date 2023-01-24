@@ -1,4 +1,35 @@
 .mask {
     background-color: #00000047;
-    
+}
+
+.uk-subnav-pill>*>:first-child {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.uk-subnav-pill>.uk-active>a {
+    background-color: #ff99d76b;
+    color: #fff;
+    border: solid 2px white;
+    border-radius: .5rem;
+}
+
+.uk-subnav-pill>*>:first-child {
+    border-radius: .5rem;
+}
+
+.uk-select {
+    background-color: var(--secoundColor) ;
+    width: 100% !important;
+    color: #fff;
+}
+.uk-input, .uk-select, .uk-textarea{
+    width: 100% !important;
+}
+.uk-select:not([multiple]):not([size]){
+    background-color: var(--secoundColor) ;
+    width: 100% !important;
+    color: #fff;
+    border: 0;
 }
