@@ -75,7 +75,7 @@ h6 {
   width: 80% !important;
   border: 2px solid var(--thirthColor);
 }
-.box_inner {
+.box_inner, .post-title {
   transition: all 0.5s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -87,4 +87,35 @@ h6 {
 }
 .boxBg:hover .box__inner {
   transform: rotate(-11.3deg);
+}
+.mask{
+  background-color: #0000009a;
+}
+/* OWL */
+.owl-theme .owl-dots .owl-dot{
+  width: 25px;
+  height: 25px;
+  line-height: 21px;
+  border-radius: 50%;
+  margin-left: .2rem;
+  border: 2px solid var(--secoundColor);
+}
+.owl-theme .owl-dots .owl-dot span{
+  margin: 0 !important;
+  width: 6px;
+  height: 6px;
+  background: var(--secoundColor);
+  display: inline-block;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: var(--secoundColor);
+}
+.owl-theme .owl-dots .owl-dot.active{
+  background: var(--mainColor);
+}
+.newsletter{
+  background-image: url("./../img/wave.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: auto;
 }

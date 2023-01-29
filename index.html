@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body style="height: 4000px;">
+<body class="hidden lg:block">
     <header class="header w-full">
         <section class="top-header bg-secondColor w-full">
             <div class="container mx-auto sm:px-16 px-2">
@@ -116,6 +116,27 @@
             <div class="container mx-auto sm:px-16 px-2">
                 <div class="grid grid-cols-1">
                     <div id="indexslide" class="owl-carousel owl-theme h-[35rem]">
+                        <div class="item h-full">
+                            <div class="grid grid-cols-6 gap-10 items-center h-full">
+                                <div class="col-span-3">
+                                    <h2 class="text-xl mb-5">مشاوره سریع و رایگان</h2>
+                                    <h3 class="text-4xl mb-5">در کنار شما با دانشجویار</h3>
+                                    <p class="text-black mb-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با
+                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                        سطرآنچنان که لازم است</p>
+                                    <ul class="flex flex-row gap-3">
+                                        <li><a href="#"
+                                                class="bg-secondColor p-3 rounded-xl text-white hover:text-white">اطلاعات
+                                                بیشتر</a></li>
+                                        <li><a href="#" class="bg-white p-3 rounded-xl">ویدیوی معرفی خدمات</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-3">
+                                    <a href="#"><img class="sliderPicture" src="./assets/img/slider1.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="item h-full">
                             <div class="grid grid-cols-6 gap-10 items-center h-full">
                                 <div class="col-span-3">
@@ -343,7 +364,8 @@
                 <div class="grid grid-cols-3 gap-5">
                     <div class="col-span-1">
                         <h4 class="text-2xl leading-[2]">انواع کتب آموزشی <br> جزوات دانشگاهی <br> در فروشگاه ما</h4>
-                        <p class="text-right mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ورم ایپسوم متن.</p>
+                        <p class="text-right mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ورم ایپسوم
+                            متن.</p>
                     </div>
                     <div class="col-span-2">
                         <div id="indexslide2" class="owl-carousel owl-theme">
@@ -352,9 +374,13 @@
                                     <a href="#"><img src="./assets/img/product.jpg" alt=""></a>
                                     <ul class="pt-3 mb-3 flex flex-col gap-3">
                                         <li><i class="fa-regular fa-pen-to-square text-secondColor"></i> علی ریاحی</li>
-                                        <li><h3 class="leading-8"><a class="hover:text-secondColor" href="#">کتاب فیزئولوژی پیشرفته اضغر حسین زاده انتشارات دهخدا - جلد2</a></h3></li>
+                                        <li>
+                                            <h3 class="leading-8"><a class="hover:text-secondColor" href="#">کتاب
+                                                    فیزئولوژی پیشرفته اضغر حسین زاده انتشارات دهخدا - جلد2</a></h3>
+                                        </li>
                                         <li class="text-left text-black text-lg font-iransansbold">285.000 تومان</li>
-                                        <li><a href="#" class="bg-secondColor p-2 rounded-xl text-white">جزئیات محصول <i class="fa-solid fa-cart-shopping"></i></a></li>
+                                        <li><a href="#" class="bg-secondColor p-2 rounded-xl text-white">جزئیات محصول <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -363,7 +389,287 @@
                 </div>
             </div>
         </section>
+
+        <section class="section6">
+            <div class="text-center my-20">
+                <h2 class="text-3xl border-b-4 inline pb-2 border-fourthColor">مجله دانشجویار</h2>
+            </div>
+            <div class="container mx-auto sm:px-16 px-2 relative">
+                <img class="absolute -right-10 -top-28" src="./assets/img/blogbg.svg" alt="">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-start-2 col-span-6">
+                        <dv class="relative">
+                            <a href="#">
+                                <img class="h-[32rem] w-full object-cover rounded-xl" src="./assets/img/blog.jpg"
+                                    alt="">
+                                <div class="mask absolute w-full h-full top-0 rounded-xl"></div>
+                                <ul
+                                    class="absolute bg-white bottom-8 -right-5 post-title p-4 flex flex-col gap-2 rounded-xl">
+                                    <li class="font-iransansbold text-sm"><i
+                                            class="fa-solid fa-circle text-mainColor text-xs"></i> <a href="#">آموزش</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <h3>بهترین روش ورود به دانشگاه از زبان مشاوران</h3>
+                                        </a></li>
+                                    <li><a href="#" class="float-left mt-2 text-secondColor">ادامه مطلب <i
+                                                class="fa-solid fa-angles-left"></i></a></li>
+                                </ul>
+                            </a>
+                        </dv>
+                    </div>
+                    <div class="col-span-4">
+                        <ul class="flex flex-col h-full justify-between">
+                            <li>
+                                <dv class="relative">
+                                    <a href="#">
+                                        <img class="object-cover h-[15rem] w-full rounded-xl"
+                                            src="./assets/img/blog.jpg" alt="">
+                                        <div class="mask absolute w-full h-full top-0 rounded-xl"></div>
+                                        <ul class="absolute text-black bottom-4 right-4 flex flex-col gap-5 w-4/5">
+                                            <li><a class="bg-secondColor text-white p-1 rounded-xl" href="#">آموزش</a>
+                                            </li>
+                                            <li>
+                                                <h3><a href="#" class="text-white">آموزش زمانبندی مطالعه</a></h3>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </dv>
+                            </li>
+                            <li>
+                                <dv class="relative">
+                                    <a href="#">
+                                        <img class="object-cover h-[15rem] w-full rounded-xl"
+                                            src="./assets/img/blog.jpg" alt="">
+                                        <div class="mask absolute w-full h-full top-0 rounded-xl"></div>
+                                        <ul class="absolute text-black bottom-4 right-4 flex flex-col gap-5 w-4/5">
+                                            <li><a class="bg-secondColor text-white p-1 rounded-xl" href="#">آموزش</a>
+                                            </li>
+                                            <li>
+                                                <h3><a href="#" class="text-white">آموزش زمانبندی مطالعه</a></h3>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </dv>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section7">
+            <div class="text-center my-20">
+                <h2 class="text-3xl border-b-4 inline pb-2 border-fourthColor">نظرات دانشجویان</h2>
+            </div>
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-6">
+                    <div class="col-span-4 col-start-2">
+                        <div id="indexslide3" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div
+                                    class="indexComment bg-gray-100 hover:bg-mainColor transition-all duration-300 w-full p-5 rounded-xl">
+                                    <ul>
+                                        <li class="text-left px-5 pb-3"><i
+                                                class="fa-solid fa-quote-right text-5xl opacity-50"></i></li>
+                                        <li>
+                                            <p class="text-right mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                        </li>
+                                        <li>
+                                            <div class="grid grid-cols-3 gap-4 items-center">
+                                                <div class="col-span-1">
+                                                    <img class="rounded-full" src="./assets/img/haji.webp" alt="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <ul class="flex flex-col gap-2 font-iransansbold">
+                                                        <li>علی حاج محمدی</li>
+                                                        <li>همیار وردپرس</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div
+                                    class="indexComment bg-gray-100 hover:bg-mainColor transition-all duration-300 w-full p-5 rounded-xl">
+                                    <ul>
+                                        <li class="text-left px-5 pb-3"><i
+                                                class="fa-solid fa-quote-right text-5xl opacity-50"></i></li>
+                                        <li>
+                                            <p class="text-right mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                        </li>
+                                        <li>
+                                            <div class="grid grid-cols-3 gap-4 items-center">
+                                                <div class="col-span-1">
+                                                    <img class="rounded-full" src="./assets/img/haji.webp" alt="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <ul class="flex flex-col gap-2 font-iransansbold">
+                                                        <li>علی حاج محمدی</li>
+                                                        <li>همیار وردپرس</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div
+                                    class="indexComment bg-gray-100 hover:bg-mainColor transition-all duration-300 w-full p-5 rounded-xl">
+                                    <ul>
+                                        <li class="text-left px-5 pb-3"><i
+                                                class="fa-solid fa-quote-right text-5xl opacity-50"></i></li>
+                                        <li>
+                                            <p class="text-right mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                        </li>
+                                        <li>
+                                            <div class="grid grid-cols-3 gap-4 items-center">
+                                                <div class="col-span-1">
+                                                    <img class="rounded-full" src="./assets/img/haji.webp" alt="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <ul class="flex flex-col gap-2 font-iransansbold">
+                                                        <li>علی حاج محمدی</li>
+                                                        <li>همیار وردپرس</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div
+                                    class="indexComment bg-gray-100 hover:bg-mainColor transition-all duration-300 w-full p-5 rounded-xl">
+                                    <ul>
+                                        <li class="text-left px-5 pb-3"><i
+                                                class="fa-solid fa-quote-right text-5xl opacity-50"></i></li>
+                                        <li>
+                                            <p class="text-right mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                        </li>
+                                        <li>
+                                            <div class="grid grid-cols-3 gap-4 items-center">
+                                                <div class="col-span-1">
+                                                    <img class="rounded-full" src="./assets/img/haji.webp" alt="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <ul class="flex flex-col gap-2 font-iransansbold">
+                                                        <li>علی حاج محمدی</li>
+                                                        <li>همیار وردپرس</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div
+                                    class="indexComment bg-gray-100 hover:bg-mainColor transition-all duration-300 w-full p-5 rounded-xl">
+                                    <ul>
+                                        <li class="text-left px-5 pb-3"><i
+                                                class="fa-solid fa-quote-right text-5xl opacity-50"></i></li>
+                                        <li>
+                                            <p class="text-right mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                        </li>
+                                        <li>
+                                            <div class="grid grid-cols-3 gap-4 items-center">
+                                                <div class="col-span-1">
+                                                    <img class="rounded-full" src="./assets/img/haji.webp" alt="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <ul class="flex flex-col gap-2 font-iransansbold">
+                                                        <li>علی حاج محمدی</li>
+                                                        <li>همیار وردپرس</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section8 my-20">
+            <div class="container mx-auto sm:px-16 px-2">
+                <div class="newsletter bg-tirthColor w-full h-auto rounded-[60px] p-12">
+                    <div class="grid grid-cols-2 gap-4 items-center">
+                        <div class="col-span-1 text-center">
+                            <h5 class="text-4xl text-white mb-8">عضویت در خبرنامه</h5>
+                            <p class="text-center text-white mb-6">جهت دریافت جدیدترین اخبار و کدهای تخفیف محصولات ایمیل
+                                خود را وارد نمایید.</p>
+                            <form action="">
+                                <input class="uk-input uk-form-width-medium rounded-lg border-0" type="text"
+                                    placeholder="ایمیل شما ..." aria-label="Default">
+                                <button
+                                    class="uk-button uk-button-default rounded-lg bg-secondColor text-white border-0">ارسال</button>
+                            </form>
+                        </div>
+                        <div class="col-span-1">
+                            <img class="w-1/2 float-right" src="./assets/img/newsletter.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="w-full bg-gray-100 pt-16">
+        <div class="container mx-auto sm:px-16 px-2">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="col-span-1">
+                    <h4 class="text-xl mb-5">خدمات ما در دانشجو یار برای تحصیل با کیفیت شماست </h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ورم ایپسوم متن.ورم ایپسوم متن ساختگی با
+                        تولید سادگی است .
+                    </p>
+                    <h4 class="text-xl mb-5 mt-5">لینکهای مفید</h4>
+                    <ul class="flex flex-row gap-5">
+                        <li><a href="#">صفحه اصلی</a></li>
+                        <li><a href="#">فروشگاه</a></li>
+                        <li><a href="#">سامانه مشاوره آنلاین</a></li>
+                        <li><a href="#">تماس باما</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <ul class="flex flex-row gap-10 justify-end">
+                        <li><img class="w-28" src="./assets/img/enamad.svg" alt=""></li>
+                        <li><img class="w-24" src="./assets/img/kasbokar.svg" alt=""></li>
+                    </ul>
+                    <h4 class="text-xl mb-5 mt-5">باما همراه باشید</h4>
+                    <ul class="text-2xl flex flex-row gap-6">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 py-5">
+                    <p class="w-full text-center">کلیه حقوق این سایت متعلق به دانشجویار میباشد.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>
